@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerece shopping app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar here -->
+<header>
+    <nav class="navbar flex container">
+        <a href="#" class="logo">
+             <img src="images/logo.png" alt="SnapShop Logo" style="height:250px;">
+        </a>
+
+        <!-- Search icon and input -->
+        <div class="nav-icons flex">
+            <input type="text" id="searchInput" placeholder="Search products..." class="search-input">
+            <a href="#" class="icon search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            
+
+            <a href="#" class="icon">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+             <div class="cart-container" style="position: relative;">
+            <a href="#" class="icon icon-active">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a></div>
+
+        </div>
+
+        <ul class="navlist flex">
+            <li><a href="#home" class="link link-active">home</a></li>
+            <li><a href="#category" class="link">shop</a></li>
+            
+            <li><a href="#blog" class="link">blog</a></li>
+            <li><a href="#contact" class="link">contact</a></li>
+        </ul>
+
+        <a href="#" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</header>
+
+
+<!-- Sections here -->
+ <main>
+
+
+
+    <section id="home" class="hero ">
+        <div class="hero-content flex container">
+        <div>  
+            <div><h1>Snap It,<span>Shop It!</span></h1></div>
+             <h3>Summer Fashion</h3>
+        <h2>New Collection</h2>
+        <h4>Big sale of this week up to <span>50% Off</span></h4>
+        <button onclick="location.href='#category'">Shop Now</button>
+
+       </div>  
+     </div>
+       
+    </section>
+
+
+    <section id="category" class="section">
+<div class="category-container container">
+
+    <div class="category">
+        <img src="images/for men.jpg" alt="">
+        <button onclick="location.href='#men'">for Men's</button>
+    </div>
+
+     <div class="category">
+        <img src="images/for kids.jpg" alt="">
+        <button onclick="location.href='#kids'">for Kid's</button>
+    </div>
+
+     <div class="category">
+        <img src="images/for accessories.jpg" alt="">
+        <button onclick="location.href='#accessories'">accessories</button>
+    </div>
+
+     <div class="category">
+        <img src="images/for women.jpg" alt="">
+        <button onclick="location.href='#women'">for Women</button>
+    </div>
+</div>
+
+    </section>
+
+<!-- mens section -->
+    <section id="men" class="section">
+    <div class="container">
+        <h2>Men's Collection</h2>
+        <div class="line"></div>
+
+        <div class="sort-box">
+      <select id="sort-men">
+        <option value="default">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="below 500">Below 500</option>
+      </select>
+    </div>
+
+        <div class="card-container flex wrap">
+<div class="card">
+    <img src="images/men image1.jpg">
+    <div class="card-content">
+        <p class="title">
+            Bottle green jacket with white t-shirt
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹650</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/men image2.jpg">
+    <div class="card-content">
+        <p class="title">
+            shimmery black shirt
+        </p>
+        <div class="price">
+           
+            <span class="amount">₹400</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="card ">
+    <img src="images/men image3.jpg">
+    <div class="card-content">
+        <p class="title">
+            Baggy black jeans
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="card sale">
+    <img src="images/men image4.jpg">
+    <div class="card-content">
+        <p class="title">
+            Light blue baggy jeans
+        </p>
+        <div class="price">
+            <del>₹2000</del>
+            <span class="amount">₹1200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="card-container flex wrap">
+<div class="card sale">
+    <img src="images/men image5.jpg">
+    <div class="card-content">
+        <p class="title">
+            Black wide leg trousers
+        </p>
+        <div class="price">
+            <del>₹2500</del>
+
+            <span class="amount">₹1500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/men image6.jpg">
+    <div class="card-content">
+        <p class="title">
+           Black blazer
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1600</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/men image10.jpg">
+    <div class="card-content">
+        <p class="title">
+            Offwhite pocket jacket
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/men image8.jpg">
+    <div class="card-content">
+        <p class="title">
+           Ethenic men salwar & kurta
+        </p>
+        <div class="price">
+            <del>₹3000</del>
+            <span class="amount">₹2500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+    </div>
+</section>
+
+
+
+
+ <!-- womens section -->
+<section  class="section">
+<div class="sale-container">
+<h3>New Trend 2026</h3>
+<h1>Women's Collection</h1>
+<div class="line"></div>
+<h4>Big sale of this week</h4>
+<button onclick="location.href='#women'" >shop now</button>
+</div>
+</section>
+
+<section id="women" class="section">
+<div class="container"><h2>Women's Collection</h2>
+<div class="line"></div>
+
+<div class="sort-box">
+      <select id="sort-women">
+        <option value="default">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="below 500">Below 500</option>
+      </select>
+    </div>
+
+        <div class="card-container flex wrap">
+<div class="card">
+    <img src="images/women image1.jpg">
+    <div class="card-content">
+        <p class="title">
+            Beige pocket jacket
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹900</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/women image2.jpg">
+    <div class="card-content">
+        <p class="title">
+            Black corset
+        </p>
+        <div class="price">
+           
+            <span class="amount">₹500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/women image3.jpg">
+    <div class="card-content">
+        <p class="title">
+            Lace black one-piece
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹600</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/women image4.jpg">
+    <div class="card-content">
+        <p class="title">
+           Handmade v-cut one-piece
+        </p>
+        <div class="price">
+            <del>₹900</del>
+            <span class="amount">₹700</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+<div class="card-container flex wrap">
+<div class="card sale">
+    <img src="images/women image5.jpg">
+    <div class="card-content">
+        <p class="title">
+            Ethenic orange kurta set
+        </p>
+        <div class="price">
+            <del>₹2500</del>
+
+            <span class="amount">₹1500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/women image6.jpg">
+    <div class="card-content">
+        <p class="title">
+           Ethenic blue kurta set
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1400</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/women image7.jpg">
+    <div class="card-content">
+        <p class="title">
+            One-shoulder red one-piece
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/women image8.jpg">
+    <div class="card-content">
+        <p class="title">
+           One-shoulder white one-piece
+        </p>
+        <div class="price">
+            <del>₹1800</del>
+            <span class="amount">₹1200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+    </div>
+</section>
+
+<!-- kids section -->
+
+<section id="kids" class="section">
+<div class="container"><h2>Kid's Collection</h2>
+<div class="line"></div>
+
+<div class="sort-box">
+      <select id="sort-kids">
+        <option value="default">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+         <option value="below 500">Below 500</option>
+      </select>
+    </div>
+
+        <div class="card-container flex wrap">
+<div class="card">
+    <img src="images/kids image1.jpg ">
+    <div class="card-content">
+        <p class="title">
+            Orange lace top
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹300</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/kids image2.jpg ">
+    <div class="card-content">
+        <p class="title">
+            Full hand crop-top
+        </p>
+        <div class="price">
+           
+            <span class="amount">₹150</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/kids image3.jpg ">
+    <div class="card-content">
+        <p class="title">
+           two-piece red dress
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹900</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/kids image4.jpg ">
+    <div class="card-content">
+        <p class="title">
+           Red-bow white one-piece
+        </p>
+        <div class="price">
+            <del>₹900</del>
+            <span class="amount">₹600</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+<div class="card-container flex wrap">
+<div class="card sale">
+    <img src="images/kids image5.jpg ">
+    <div class="card-content">
+        <p class="title">
+            Boy's night suit
+        </p>
+        <div class="price">
+            <del>₹300</del>
+
+            <span class="amount">₹200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/kids image6.jpg ">
+    <div class="card-content">
+        <p class="title">
+           Ethenic boy's set
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1200</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/kids image7.jpg ">
+    <div class="card-content">
+        <p class="title">
+            White t-shirt and crago pants
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/kids image8.jpg ">
+    <div class="card-content">
+        <p class="title">
+            Matching suit
+        </p>
+        <div class="price">
+            <del>₹1000</del>
+            <span class="amount">₹800</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+    </div>
+</section>
+
+<!-- accessoriessection -->
+
+
+<section id="accessories" class="section">
+<div class="container"><h2>Accessorie's Collection</h2>
+<div class="line"></div>
+
+<div class="sort-box">
+      <select id="sort-accessories">
+        <option value="default">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="below 200"> 200</option>
+      </select>
+    </div>
+
+        <div class="card-container flex wrap">
+<div class="card">
+    <img src="images/access image1.jpg  ">
+    <div class="card-content">
+        <p class="title">
+            scrunchies(3pieces)
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹80</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card new">
+    <img src="images/acess image2.jpg  ">
+    <div class="card-content">
+        <p class="title">
+           Metallic watch
+        </p>
+        <div class="price">
+           
+            <span class="amount">₹1500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card ">
+    <img src="images/acess image3.jpg  ">
+    <div class="card-content">
+        <p class="title">
+            Brown handbag
+        </p>
+        <div class="price">
+            
+            <span class="amount">₹1800</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card sale">
+    <img src="images/acess image4.jpg  ">
+    <div class="card-content">
+        <p class="title">
+            Bag chain
+        </p>
+        <div class="price">
+            <del>₹150</del>
+            <span class="amount">₹100</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+
+
+    </div>
+</section>
+
+<section class="section">
+<div class="secondary-bg">
+    <div class="container flex wrap">
+        <div class="box">
+            <i class="fa-solid fa-truck"></i>
+            <h5>
+                <a href="#">Free Shipping</a>
+            </h5>
+            <p class="des">fre shipping on order over $99</p>
+        </div>
+
+         <div class="box">
+            <i class="fa-solid fa-money-bill-1"></i>
+            <h5>
+                <a href="#">Cash On Delivery</a>
+            </h5>
+            <p class="des">The internet trend to Repeat</p>
+        </div>
+
+         <div class="box">
+            <i class="fa-solid fa-gift"></i>
+            <h5>
+                <a href="#">Gift For All</a>
+            </h5>
+            <p class="des">Receive Gift when Subscribe</p>
+        </div>
+
+         <div class="box">
+            <i class="fa-solid fa-clock"></i>
+            <h5>
+                <a href="#">Opening All Week</a>
+            </h5>
+            <p class="des">6.00am - 17.00pm</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="blog" class="section">
+<div class="container">
+    <h2>New Latest</h2>
+    <div class="line"></div>
+
+    <div class="blog-container flex wrap">
+        <div class="blog-box">
+            <img src="images/news-image1.jpg" >
+            <div class="blog-content">
+                <h3 class="heading">
+                     <a href="#">New Trend 2026</a>
+                    </h3>
+                <p class="des">Co-ord sets are very trending because they look stylish with zero effort. The top and bottom come in the same color or print, so you don’t need to think about matching. They look classy, modern, and are perfect for college, outings, and even casual parties. One set = full outfit, simple and fashionable.</p>
+                <a href="#" class="blog-link"> Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <img src="images/news-image2.jpg" >
+            <div class="blog-content">
+                <h3 class="heading"> 
+                    <a href="#">New Trend 2026</a>
+                </h3>
+                <p class="des">Oversized t-shirts, hoodies, and baggy jeans are super popular now. This trend gives a cool, confident, and relaxed vibe. It is inspired by Korean and Western street fashion. It is comfortable, trendy, and looks very fashionable when styled with sneakers and small accessories.</p>
+                <a href="#" class="blog-link"> Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <img src="images/news-image3.jpg" >
+            <div class="blog-content">
+                <h3 class="heading">
+                     <a href="#">New Trend 2026</a>
+                </h3>
+                <p class="des">Light colors like baby pink, lavender, mint green, sky blue, and peach are in huge demand. These colors make outfits look soft, elegant, and fresh. Pastels are perfect for daytime looks and give a very clean and aesthetic appearance.</p>
+                <a href="#" class="blog-link"> Read More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- contact section -->
+<section id="contact" class="section">
+    <div class="secondary-bg">
+        <form class="container flex wrap">
+            <h3>Sign Up for Send Newsletter</h3>
+            <div class="input-container flex">
+             <input type="email" name="email" 
+             id="email" placeholder="Your Email" autocomplete="off">
+             <button>Subscribe</button>
+             </div>
+
+             <div class="social-icons flex">
+                <a href="#" class="media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="media">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" class="media">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+
+                <a href="#" class="media">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+
+                <a href="#" class="media">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+             </div>
+
+          
+        </form>
+    </div>
+
+</section>
+
+
+
+
+</main>
+
+
+<!-- Footer here -->
+ <footer class="section">
+    <div class="footer-container container flex wrap">
+    <ul class="footer-list">
+    <li>
+        <a href="#" class="footer-link"> about us</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link"> Online store</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link">blog</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link"> contact us</a>
+    </li>
+    </ul>
+
+    <ul class="footer-list">
+    <li>
+        <a href="#" class="footer-link"> login/register</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link"> your cart</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link">wishlist items</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link">Your checkout</a>
+    </li>
+    </ul>
+
+    <ul class="footer-list">
+    <li>
+        <a href="#" class="footer-link"> FAQs</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link"> term of services</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link">Privacy policy</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link"> returns</a>
+    </li>
+    </ul>
+
+    <ul class="footer-list">
+        
+        <li>
+            <p class="detail">+91 123 456 78</p>
+        </li>
+
+        <li>
+            <p class="detail">ABC City, XYZ Road</p>
+        </li>
+
+        <li>
+            <p class="detail">snapshop@gmail.com</p>
+        </li>
+    </ul>
+
+   
+    </div>
+     <div class="footer-bottom">
+        <p>Copyright &copy;2026
+            <a href="#" class="footer-link">SnapShop</a>
+        </p>
+    </div>
+ </footer>
+
+    <script src="main.js"></script>
+
+   <div id="toast" style="
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 2000;
+"></div>
+
+
+</body>
+</html>
